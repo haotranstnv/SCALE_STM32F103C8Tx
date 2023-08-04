@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"scale_stm32f103c8tx\startup_stm32f103xb.o"
+"scale_stm32f103c8tx\main.o"
+"scale_stm32f103c8tx\stm32f1xx_it.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_msp.o"
+"scale_stm32f103c8tx\hx711.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_gpio_ex.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_tim.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_tim_ex.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_uart.o"
+"scale_stm32f103c8tx\stm32f1xx_hal.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_rcc.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_rcc_ex.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_gpio.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_dma.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_cortex.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_pwr.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_flash.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_flash_ex.o"
+"scale_stm32f103c8tx\stm32f1xx_hal_exti.o"
+"scale_stm32f103c8tx\system_stm32f1xx.o"
+--strict --scatter "SCALE_STM32F103C8Tx\SCALE_STM32F103C8Tx.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SCALE_STM32F103C8Tx.map" -o SCALE_STM32F103C8Tx\SCALE_STM32F103C8Tx.axf
